@@ -1,0 +1,225 @@
+{
+  "date": "2026-09-19",
+  "node": "v24.19.0",
+  "tests": {
+    "passed": 47,
+    "failed": 0,
+    "results": [
+      {
+        "name": "A01 3の上に4",
+        "pass": true
+      },
+      {
+        "name": "A02 3の上に3不可",
+        "pass": true
+      },
+      {
+        "name": "A03 3の上に2不可",
+        "pass": true
+      },
+      {
+        "name": "A04 満杯不可",
+        "pass": true
+      },
+      {
+        "name": "A05 空列に1・25",
+        "pass": true
+      },
+      {
+        "name": "A06 13の配置可能列",
+        "pass": true
+      },
+      {
+        "name": "A07 不可入力は不変",
+        "pass": true
+      },
+      {
+        "name": "A08 100デッキに重複・欠落なし",
+        "pass": true
+      },
+      {
+        "name": "A09 色と配置は独立",
+        "pass": true
+      },
+      {
+        "name": "A11 配置後の昇順・上限・重複",
+        "pass": true
+      },
+      {
+        "name": "A12 色の境界と重み",
+        "pass": true
+      },
+      {
+        "name": "B01 14城・同色0列=0点",
+        "pass": true
+      },
+      {
+        "name": "B02 15城・同色0列=15点",
+        "pass": true
+      },
+      {
+        "name": "B03 20城・同色0列=20点",
+        "pass": true
+      },
+      {
+        "name": "B04 20城・同色1列=40点",
+        "pass": true
+      },
+      {
+        "name": "B05 20城・同色2列=60点",
+        "pass": true
+      },
+      {
+        "name": "B06 20城・同色3列=80点",
+        "pass": true
+      },
+      {
+        "name": "B07 20城・同色4列=100点",
+        "pass": true
+      },
+      {
+        "name": "B08 25城・同色5列=250点",
+        "pass": true
+      },
+      {
+        "name": "B09 14城・同色1列=0点",
+        "pass": true
+      },
+      {
+        "name": "B10 18城・同色1列=36点",
+        "pass": true
+      },
+      {
+        "name": "B11 22城・同色2列=66点",
+        "pass": true
+      },
+      {
+        "name": "同色4城・異色混在を除外",
+        "pass": true
+      },
+      {
+        "name": "C01 14城で強制終了",
+        "pass": true
+      },
+      {
+        "name": "C02/C03 15城で選択",
+        "pass": true
+      },
+      {
+        "name": "C02/C03 24城で選択",
+        "pass": true
+      },
+      {
+        "name": "C04/C05 18城再合戦・繰り返し",
+        "pass": true
+      },
+      {
+        "name": "C06 再合戦前の18点は含めない",
+        "pass": true
+      },
+      {
+        "name": "C07/C08 勝ち戦加点と同戦続行",
+        "pass": true
+      },
+      {
+        "name": "C09 連続勝ち戦25+50+18=93",
+        "pass": true
+      },
+      {
+        "name": "C10/C21 75点破棄・勝ち戦記録保持",
+        "pass": true
+      },
+      {
+        "name": "C11 勝ち戦後14城で強制終了、25点保持",
+        "pass": true
+      },
+      {
+        "name": "C12/C13 3回の戦終了だけでゲーム終了",
+        "pass": true
+      },
+      {
+        "name": "C14 93+21+44=158・二重計上なし",
+        "pass": true
+      },
+      {
+        "name": "C15 新規ゲームで全記録リセット",
+        "pass": true
+      },
+      {
+        "name": "C16/C18 結果の二重操作を拒否",
+        "pass": true
+      },
+      {
+        "name": "C17 全25城完成・26城目を参照しない",
+        "pass": true
+      },
+      {
+        "name": "C19 前の戦の93点は再合戦でも残る",
+        "pass": true
+      },
+      {
+        "name": "C20 降順25〜20は5城で強制終了",
+        "pass": true
+      },
+      {
+        "name": "C22 再合戦で最高22城保持",
+        "pass": true
+      },
+      {
+        "name": "S01 保存で未来の順序・色まで一致",
+        "pass": true
+      },
+      {
+        "name": "S02/S03 選択・勝ち戦・戦結果をそのまま復元",
+        "pass": true
+      },
+      {
+        "name": "S04/S09 再合戦後の0点と記録を復元",
+        "pass": true
+      },
+      {
+        "name": "S05 ゲーム結果復元",
+        "pass": true
+      },
+      {
+        "name": "S07 保存禁止と容量不足",
+        "pass": true
+      },
+      {
+        "name": "S07 壊れたJSON・非対応バージョン",
+        "pass": true
+      },
+      {
+        "name": "保存改変: 重複・降順・過剰段・不整合得点・状態",
+        "pass": true
+      }
+    ]
+  },
+  "balance": {
+    "boards": 10000,
+    "seeds": "1..10000",
+    "definition": "機会＝同じ観測盤面で数字優先と同色優先の配置先が異なる場面。完成や得点の保証ではない。再合戦・勝ち戦後の継続は含まない独立盤面比較。",
+    "metrics": {
+      "number": {
+        "reached15": 4939,
+        "mono": 106,
+        "wins": 16,
+        "points": 88581,
+        "castles": 145046,
+        "decisions": 145046,
+        "disagreements": 14328,
+        "opportunities": 7044
+      },
+      "color": {
+        "reached15": 3438,
+        "mono": 252,
+        "wins": 6,
+        "points": 61673,
+        "castles": 132728,
+        "decisions": 132728,
+        "disagreements": 11827,
+        "opportunities": 7044
+      }
+    }
+  }
+}
