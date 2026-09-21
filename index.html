@@ -1,1 +1,21 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>五段重ね将軍 — テスト</title><link rel="stylesheet" href="../css/style.css"><script defer src="../js/config.js"></script><script defer src="../js/game.js"></script><script defer src="../js/storage.js"></script><script defer src="game.test.js"></script><script defer src="balance.js"></script></head><body><main><h1>ルールの自動テスト</h1><p>実際のゲームと同じロジックを使います。ゲームの保存データは変更しません。</p><pre id="results" style="white-space:pre-wrap"></pre><button class="button primary" id="balance">10,000盤面の比較を実行</button><pre id="balance-results" style="white-space:pre-wrap"></pre><a href="../index.html">ゲームへ</a></main></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141923">
+  <meta name="description" content="数字を読み、色をそろえ、五段を築け。1〜25の城を積む思考型パズル、五段重ね将軍。">
+  <title>五段重ね将軍</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/config.js"></script>
+  <script defer src="js/game.js"></script>
+  <script defer src="js/storage.js"></script>
+  <script defer src="js/ui.js"></script>
+</head>
+<body>
+  <div id="app"><main><h1>五段重ね将軍</h1><div class="board" aria-label="5本の城列"><button>第1列</button><button>第2列</button><button>第3列</button><button>第4列</button><button>第5列</button></div></main></div>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <noscript>このゲームを遊ぶには、ブラウザのJavaScriptを有効にしてください。</noscript>
+</body>
+</html>
