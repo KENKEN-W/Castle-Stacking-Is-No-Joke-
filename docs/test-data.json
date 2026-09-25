@@ -1,8 +1,8 @@
 {
-  "date": "2026-09-19",
-  "node": "v24.19.0",
-  "tests": {
-    "passed": 47,
+  "date": "2026-09-25T02:51:14.745Z",
+  "revision": 3,
+  "logic": {
+    "passed": 59,
     "failed": 0,
     "results": [
       {
@@ -62,23 +62,23 @@
         "pass": true
       },
       {
-        "name": "B04 20城・同色1列=40点",
+        "name": "B04 20城・同色1列=45点",
         "pass": true
       },
       {
-        "name": "B05 20城・同色2列=60点",
+        "name": "B05 20城・同色2列=70点",
         "pass": true
       },
       {
-        "name": "B06 20城・同色3列=80点",
+        "name": "B06 20城・同色3列=95点",
         "pass": true
       },
       {
-        "name": "B07 20城・同色4列=100点",
+        "name": "B07 20城・同色4列=120点",
         "pass": true
       },
       {
-        "name": "B08 25城・同色5列=250点",
+        "name": "B08 25城・同色5列=275点",
         "pass": true
       },
       {
@@ -86,11 +86,11 @@
         "pass": true
       },
       {
-        "name": "B10 18城・同色1列=36点",
+        "name": "B10 18城・同色1列=41点",
         "pass": true
       },
       {
-        "name": "B11 22城・同色2列=66点",
+        "name": "B11 22城・同色2列=76点",
         "pass": true
       },
       {
@@ -98,87 +98,7 @@
         "pass": true
       },
       {
-        "name": "C01 14城で強制終了",
-        "pass": true
-      },
-      {
-        "name": "C02/C03 15城で選択",
-        "pass": true
-      },
-      {
-        "name": "C02/C03 24城で選択",
-        "pass": true
-      },
-      {
-        "name": "C04/C05 18城再合戦・繰り返し",
-        "pass": true
-      },
-      {
-        "name": "C06 再合戦前の18点は含めない",
-        "pass": true
-      },
-      {
-        "name": "C07/C08 勝ち戦加点と同戦続行",
-        "pass": true
-      },
-      {
-        "name": "C09 連続勝ち戦25+50+18=93",
-        "pass": true
-      },
-      {
-        "name": "C10/C21 75点破棄・勝ち戦記録保持",
-        "pass": true
-      },
-      {
-        "name": "C11 勝ち戦後14城で強制終了、25点保持",
-        "pass": true
-      },
-      {
-        "name": "C12/C13 3回の戦終了だけでゲーム終了",
-        "pass": true
-      },
-      {
-        "name": "C14 93+21+44=158・二重計上なし",
-        "pass": true
-      },
-      {
-        "name": "C15 新規ゲームで全記録リセット",
-        "pass": true
-      },
-      {
-        "name": "C16/C18 結果の二重操作を拒否",
-        "pass": true
-      },
-      {
-        "name": "C17 全25城完成・26城目を参照しない",
-        "pass": true
-      },
-      {
-        "name": "C19 前の戦の93点は再合戦でも残る",
-        "pass": true
-      },
-      {
-        "name": "C20 降順25〜20は5城で強制終了",
-        "pass": true
-      },
-      {
-        "name": "C22 再合戦で最高22城保持",
-        "pass": true
-      },
-      {
         "name": "S01 保存で未来の順序・色まで一致",
-        "pass": true
-      },
-      {
-        "name": "S02/S03 選択・勝ち戦・戦結果をそのまま復元",
-        "pass": true
-      },
-      {
-        "name": "S04/S09 再合戦後の0点と記録を復元",
-        "pass": true
-      },
-      {
-        "name": "S05 ゲーム結果復元",
         "pass": true
       },
       {
@@ -192,33 +112,734 @@
       {
         "name": "保存改変: 重複・降順・過剰段・不整合得点・状態",
         "pass": true
+      },
+      {
+        "name": "A13 制限付き抽選1000種と6手目の21〜25",
+        "pass": true
+      },
+      {
+        "name": "A12 種類ごとの個数は固定しない",
+        "pass": true
+      },
+      {
+        "name": "A14 無効入力・復帰で手数不変",
+        "pass": true
+      },
+      {
+        "name": "B12 同種4段1列のみ・15城は20点",
+        "pass": true
+      },
+      {
+        "name": "B13 15城・同種5段は35点",
+        "pass": true
+      },
+      {
+        "name": "B14 14城・仮加点15点は全失効",
+        "pass": true
+      },
+      {
+        "name": "B15 5城目が異種でも4段加点を保持",
+        "pass": true
+      },
+      {
+        "name": "B16/S09 4段の配置・5段・無効入力・復帰で重複なし",
+        "pass": true
+      },
+      {
+        "name": "B17 上の4城だけ同種は対象外",
+        "pass": true
+      },
+      {
+        "name": "C15 15城・同種5段達成でも置ける間は続行",
+        "pass": true
+      },
+      {
+        "name": "C16/S03 初勝ち戦18城・原因の城・41点を保存",
+        "pass": true
+      },
+      {
+        "name": "C01 14城・同種5段でも強制終了",
+        "pass": true
+      },
+      {
+        "name": "S10 旧形式は非対応・読込だけで上書きしない",
+        "pass": true
+      },
+      {
+        "name": "S07 新しい保存項目の破損を拒否",
+        "pass": true
+      },
+      {
+        "name": "D 評価の全境界",
+        "pass": true
+      },
+      {
+        "name": "C01-C03 14・15・24城で自動終了",
+        "pass": true
+      },
+      {
+        "name": "C04 75+18+5=98 自動確定",
+        "pass": true
+      },
+      {
+        "name": "C05/C06 25城勝ち戦から同戦ボーナス",
+        "pass": true
+      },
+      {
+        "name": "C07/C18/C19 連続25+55+18=98 ボーナス解除",
+        "pass": true
+      },
+      {
+        "name": "C08 累積75+14城は75点保持",
+        "pass": true
+      },
+      {
+        "name": "C09/C12 3戦終了・二重操作拒否",
+        "pass": true
+      },
+      {
+        "name": "C10 93+21+44=158",
+        "pass": true
+      },
+      {
+        "name": "C11 新規開始で全リセット",
+        "pass": true
+      },
+      {
+        "name": "C12 続行と次戦の連打は進まない",
+        "pass": true
+      },
+      {
+        "name": "C13 前の93点保持",
+        "pass": true
+      },
+      {
+        "name": "C14 全新盤面の序盤制限",
+        "pass": true
+      },
+      {
+        "name": "C17 旧RETRY/ENDを全状態で拒否",
+        "pass": true
+      },
+      {
+        "name": "C20 ボーナスでも同じ抽選と得点",
+        "pass": true
+      },
+      {
+        "name": "S02-S05/S09 全状態・ボーナス・次戦・最終結果復元",
+        "pass": true
+      },
+      {
+        "name": "S10 v2選択状態も読込で書き換えない",
+        "pass": true
+      },
+      {
+        "name": "S11 ボーナスフラグの欠落・不整合拒否",
+        "pass": true
+      },
+      {
+        "name": "C08 仮加点も失効・累積75保持",
+        "pass": true
       }
     ]
   },
   "balance": {
     "boards": 10000,
     "seeds": "1..10000",
-    "definition": "機会＝同じ観測盤面で数字優先と同色優先の配置先が異なる場面。完成や得点の保証ではない。再合戦・勝ち戦後の継続は含まない独立盤面比較。",
+    "definition": "機会＝同じ観測盤面で数字優先と同種優先の配置先が異なる場面。独立盤面比較では両方針に同じ10,000デッキを使用。別途3戦ゲームを各10,000回実行し評価分布を集計。ゲーム試行では戦終了を自動確定し、勝ち戦は続行。未来の城は参照しない。完成や得点の保証ではない。",
     "metrics": {
       "number": {
-        "reached15": 4939,
-        "mono": 106,
-        "wins": 16,
-        "points": 88581,
-        "castles": 145046,
-        "decisions": 145046,
-        "disagreements": 14328,
-        "opportunities": 7044
+        "reached15": 6746,
+        "mono": 149,
+        "wins": 164,
+        "points": 128310,
+        "castles": 160833,
+        "decisions": 160833,
+        "disagreements": 19088,
+        "opportunities": 8140
       },
       "color": {
-        "reached15": 3438,
-        "mono": 252,
-        "wins": 6,
-        "points": 61673,
-        "castles": 132728,
-        "decisions": 132728,
-        "disagreements": 11827,
-        "opportunities": 7044
+        "reached15": 5022,
+        "mono": 426,
+        "wins": 349,
+        "points": 101202,
+        "castles": 145589,
+        "decisions": 145589,
+        "disagreements": 15607,
+        "opportunities": 8140
+      }
+    },
+    "games": {
+      "number": {
+        "games": 10000,
+        "points": 391802,
+        "wins": 511,
+        "ratings": {
+          "足軽": 353,
+          "足軽大将": 5295,
+          "先手大将": 2307,
+          "副大将": 1550,
+          "総大将": 149,
+          "戦国大名": 210,
+          "天下統一大将軍": 136
+        }
+      },
+      "color": {
+        "games": 10000,
+        "points": 312796,
+        "wins": 1131,
+        "ratings": {
+          "足軽": 1268,
+          "足軽大将": 5931,
+          "先手大将": 1469,
+          "副大将": 640,
+          "総大将": 169,
+          "戦国大名": 323,
+          "天下統一大将軍": 200
+        }
+      }
+    }
+  },
+  "previous": {
+    "date": "2026-09-23",
+    "logic": {
+      "passed": 63,
+      "failed": 0,
+      "results": [
+        {
+          "name": "A01 3の上に4",
+          "pass": true
+        },
+        {
+          "name": "A02 3の上に3不可",
+          "pass": true
+        },
+        {
+          "name": "A03 3の上に2不可",
+          "pass": true
+        },
+        {
+          "name": "A04 満杯不可",
+          "pass": true
+        },
+        {
+          "name": "A05 空列に1・25",
+          "pass": true
+        },
+        {
+          "name": "A06 13の配置可能列",
+          "pass": true
+        },
+        {
+          "name": "A07 不可入力は不変",
+          "pass": true
+        },
+        {
+          "name": "A08 100デッキに重複・欠落なし",
+          "pass": true
+        },
+        {
+          "name": "A09 色と配置は独立",
+          "pass": true
+        },
+        {
+          "name": "A11 配置後の昇順・上限・重複",
+          "pass": true
+        },
+        {
+          "name": "A12 色の境界と重み",
+          "pass": true
+        },
+        {
+          "name": "B01 14城・同色0列=0点",
+          "pass": true
+        },
+        {
+          "name": "B02 15城・同色0列=15点",
+          "pass": true
+        },
+        {
+          "name": "B03 20城・同色0列=20点",
+          "pass": true
+        },
+        {
+          "name": "B04 20城・同色1列=45点",
+          "pass": true
+        },
+        {
+          "name": "B05 20城・同色2列=70点",
+          "pass": true
+        },
+        {
+          "name": "B06 20城・同色3列=95点",
+          "pass": true
+        },
+        {
+          "name": "B07 20城・同色4列=120点",
+          "pass": true
+        },
+        {
+          "name": "B08 25城・同色5列=275点",
+          "pass": true
+        },
+        {
+          "name": "B09 14城・同色1列=0点",
+          "pass": true
+        },
+        {
+          "name": "B10 18城・同色1列=41点",
+          "pass": true
+        },
+        {
+          "name": "B11 22城・同色2列=76点",
+          "pass": true
+        },
+        {
+          "name": "同色4城・異色混在を除外",
+          "pass": true
+        },
+        {
+          "name": "C01 14城で強制終了",
+          "pass": true
+        },
+        {
+          "name": "C02/C03 15城で選択",
+          "pass": true
+        },
+        {
+          "name": "C02/C03 24城で選択",
+          "pass": true
+        },
+        {
+          "name": "C04/C05 18城再合戦・繰り返し",
+          "pass": true
+        },
+        {
+          "name": "C06 再合戦前の18点は含めない",
+          "pass": true
+        },
+        {
+          "name": "C07/C08 勝ち戦加点と同戦続行",
+          "pass": true
+        },
+        {
+          "name": "C09 連続勝ち戦25+55+18=98",
+          "pass": true
+        },
+        {
+          "name": "C10/C21 80点破棄・勝ち戦記録保持",
+          "pass": true
+        },
+        {
+          "name": "C11 勝ち戦後14城で強制終了、25点保持",
+          "pass": true
+        },
+        {
+          "name": "C12/C13 3回の戦終了だけでゲーム終了",
+          "pass": true
+        },
+        {
+          "name": "C14 93+21+44=158・二重計上なし",
+          "pass": true
+        },
+        {
+          "name": "C15 新規ゲームで全記録リセット",
+          "pass": true
+        },
+        {
+          "name": "C16/C18 結果の二重操作を拒否",
+          "pass": true
+        },
+        {
+          "name": "C17 全25城完成・26城目を参照しない",
+          "pass": true
+        },
+        {
+          "name": "C19 前の戦の93点は再合戦でも残る",
+          "pass": true
+        },
+        {
+          "name": "C20 すべての新盤面の最初5手は1〜20",
+          "pass": true
+        },
+        {
+          "name": "C22 再合戦で最高22城保持",
+          "pass": true
+        },
+        {
+          "name": "S01 保存で未来の順序・色まで一致",
+          "pass": true
+        },
+        {
+          "name": "S02/S03 選択・勝ち戦・戦結果をそのまま復元",
+          "pass": true
+        },
+        {
+          "name": "S04/S09 再合戦後の0点と記録を復元",
+          "pass": true
+        },
+        {
+          "name": "S05 ゲーム結果復元",
+          "pass": true
+        },
+        {
+          "name": "S07 保存禁止と容量不足",
+          "pass": true
+        },
+        {
+          "name": "S07 壊れたJSON・非対応バージョン",
+          "pass": true
+        },
+        {
+          "name": "保存改変: 重複・降順・過剰段・不整合得点・状態",
+          "pass": true
+        },
+        {
+          "name": "A13 制限付き抽選1000種と6手目の21〜25",
+          "pass": true
+        },
+        {
+          "name": "A12 種類ごとの個数は固定しない",
+          "pass": true
+        },
+        {
+          "name": "A14 無効入力・復帰で手数不変",
+          "pass": true
+        },
+        {
+          "name": "B12 同種4段1列のみ・15城は20点",
+          "pass": true
+        },
+        {
+          "name": "B13 15城・同種5段は35点",
+          "pass": true
+        },
+        {
+          "name": "B14 14城・仮加点15点は全失効",
+          "pass": true
+        },
+        {
+          "name": "B15 5城目が異種でも4段加点を保持",
+          "pass": true
+        },
+        {
+          "name": "B16/S10 4段の配置・5段・無効入力・復帰で重複なし",
+          "pass": true
+        },
+        {
+          "name": "B17 上の4城だけ同種は対象外",
+          "pass": true
+        },
+        {
+          "name": "C23/C26 15城・同種5段達成でも置ける間は続行",
+          "pass": true
+        },
+        {
+          "name": "C24/C27/S11 初勝ち戦18城・原因の城・41点を保存",
+          "pass": true
+        },
+        {
+          "name": "C25 14城・同種5段でも強制終了",
+          "pass": true
+        },
+        {
+          "name": "C10 75点から再合戦で累積も破棄",
+          "pass": true
+        },
+        {
+          "name": "S12 旧形式は非対応・読込だけで上書きしない",
+          "pass": true
+        },
+        {
+          "name": "S07 新しい保存項目の破損を拒否",
+          "pass": true
+        },
+        {
+          "name": "D 評価の全境界",
+          "pass": true
+        }
+      ]
+    },
+    "balance": {
+      "boards": 10000,
+      "seeds": "1..10000",
+      "definition": "機会＝同じ観測盤面で数字優先と同種優先の配置先が異なる場面。独立盤面比較では両方針に同じ10,000デッキを使用。別途3戦ゲームを各10,000回実行し評価分布を集計。ゲーム試行では再合戦を選ばず、勝ち戦は続行。未来の城は参照しない。完成や得点の保証ではない。",
+      "metrics": {
+        "number": {
+          "reached15": 6746,
+          "mono": 149,
+          "wins": 164,
+          "points": 128310,
+          "castles": 160833,
+          "decisions": 160833,
+          "disagreements": 19088,
+          "opportunities": 8140
+        },
+        "color": {
+          "reached15": 5022,
+          "mono": 426,
+          "wins": 349,
+          "points": 101202,
+          "castles": 145589,
+          "decisions": 145589,
+          "disagreements": 15607,
+          "opportunities": 8140
+        }
+      },
+      "games": {
+        "number": {
+          "games": 10000,
+          "points": 391802,
+          "wins": 511,
+          "ratings": {
+            "足軽": 353,
+            "足軽大将": 5295,
+            "先手大将": 2307,
+            "副大将": 1550,
+            "総大将": 149,
+            "戦国大名": 210,
+            "天下統一大将軍": 136
+          }
+        },
+        "color": {
+          "games": 10000,
+          "points": 312796,
+          "wins": 1131,
+          "ratings": {
+            "足軽": 1268,
+            "足軽大将": 5931,
+            "先手大将": 1469,
+            "副大将": 640,
+            "総大将": 169,
+            "戦国大名": 323,
+            "天下統一大将軍": 200
+          }
+        }
+      }
+    },
+    "legacy": {
+      "date": "2026-09-19",
+      "node": "v24.19.0",
+      "tests": {
+        "passed": 47,
+        "failed": 0,
+        "results": [
+          {
+            "name": "A01 3の上に4",
+            "pass": true
+          },
+          {
+            "name": "A02 3の上に3不可",
+            "pass": true
+          },
+          {
+            "name": "A03 3の上に2不可",
+            "pass": true
+          },
+          {
+            "name": "A04 満杯不可",
+            "pass": true
+          },
+          {
+            "name": "A05 空列に1・25",
+            "pass": true
+          },
+          {
+            "name": "A06 13の配置可能列",
+            "pass": true
+          },
+          {
+            "name": "A07 不可入力は不変",
+            "pass": true
+          },
+          {
+            "name": "A08 100デッキに重複・欠落なし",
+            "pass": true
+          },
+          {
+            "name": "A09 色と配置は独立",
+            "pass": true
+          },
+          {
+            "name": "A11 配置後の昇順・上限・重複",
+            "pass": true
+          },
+          {
+            "name": "A12 色の境界と重み",
+            "pass": true
+          },
+          {
+            "name": "B01 14城・同色0列=0点",
+            "pass": true
+          },
+          {
+            "name": "B02 15城・同色0列=15点",
+            "pass": true
+          },
+          {
+            "name": "B03 20城・同色0列=20点",
+            "pass": true
+          },
+          {
+            "name": "B04 20城・同色1列=40点",
+            "pass": true
+          },
+          {
+            "name": "B05 20城・同色2列=60点",
+            "pass": true
+          },
+          {
+            "name": "B06 20城・同色3列=80点",
+            "pass": true
+          },
+          {
+            "name": "B07 20城・同色4列=100点",
+            "pass": true
+          },
+          {
+            "name": "B08 25城・同色5列=250点",
+            "pass": true
+          },
+          {
+            "name": "B09 14城・同色1列=0点",
+            "pass": true
+          },
+          {
+            "name": "B10 18城・同色1列=36点",
+            "pass": true
+          },
+          {
+            "name": "B11 22城・同色2列=66点",
+            "pass": true
+          },
+          {
+            "name": "同色4城・異色混在を除外",
+            "pass": true
+          },
+          {
+            "name": "C01 14城で強制終了",
+            "pass": true
+          },
+          {
+            "name": "C02/C03 15城で選択",
+            "pass": true
+          },
+          {
+            "name": "C02/C03 24城で選択",
+            "pass": true
+          },
+          {
+            "name": "C04/C05 18城再合戦・繰り返し",
+            "pass": true
+          },
+          {
+            "name": "C06 再合戦前の18点は含めない",
+            "pass": true
+          },
+          {
+            "name": "C07/C08 勝ち戦加点と同戦続行",
+            "pass": true
+          },
+          {
+            "name": "C09 連続勝ち戦25+50+18=93",
+            "pass": true
+          },
+          {
+            "name": "C10/C21 75点破棄・勝ち戦記録保持",
+            "pass": true
+          },
+          {
+            "name": "C11 勝ち戦後14城で強制終了、25点保持",
+            "pass": true
+          },
+          {
+            "name": "C12/C13 3回の戦終了だけでゲーム終了",
+            "pass": true
+          },
+          {
+            "name": "C14 93+21+44=158・二重計上なし",
+            "pass": true
+          },
+          {
+            "name": "C15 新規ゲームで全記録リセット",
+            "pass": true
+          },
+          {
+            "name": "C16/C18 結果の二重操作を拒否",
+            "pass": true
+          },
+          {
+            "name": "C17 全25城完成・26城目を参照しない",
+            "pass": true
+          },
+          {
+            "name": "C19 前の戦の93点は再合戦でも残る",
+            "pass": true
+          },
+          {
+            "name": "C20 降順25〜20は5城で強制終了",
+            "pass": true
+          },
+          {
+            "name": "C22 再合戦で最高22城保持",
+            "pass": true
+          },
+          {
+            "name": "S01 保存で未来の順序・色まで一致",
+            "pass": true
+          },
+          {
+            "name": "S02/S03 選択・勝ち戦・戦結果をそのまま復元",
+            "pass": true
+          },
+          {
+            "name": "S04/S09 再合戦後の0点と記録を復元",
+            "pass": true
+          },
+          {
+            "name": "S05 ゲーム結果復元",
+            "pass": true
+          },
+          {
+            "name": "S07 保存禁止と容量不足",
+            "pass": true
+          },
+          {
+            "name": "S07 壊れたJSON・非対応バージョン",
+            "pass": true
+          },
+          {
+            "name": "保存改変: 重複・降順・過剰段・不整合得点・状態",
+            "pass": true
+          }
+        ]
+      },
+      "balance": {
+        "boards": 10000,
+        "seeds": "1..10000",
+        "definition": "機会＝同じ観測盤面で数字優先と同色優先の配置先が異なる場面。完成や得点の保証ではない。再合戦・勝ち戦後の継続は含まない独立盤面比較。",
+        "metrics": {
+          "number": {
+            "reached15": 4939,
+            "mono": 106,
+            "wins": 16,
+            "points": 88581,
+            "castles": 145046,
+            "decisions": 145046,
+            "disagreements": 14328,
+            "opportunities": 7044
+          },
+          "color": {
+            "reached15": 3438,
+            "mono": 252,
+            "wins": 6,
+            "points": 61673,
+            "castles": 132728,
+            "decisions": 132728,
+            "disagreements": 11827,
+            "opportunities": 7044
+          }
+        }
       }
     }
   }
