@@ -1,0 +1,955 @@
+{
+  "date": "2026-09-25T02:50:45.202Z",
+  "browsers": [
+    {
+      "channel": "msedge",
+      "version": "153.0.4234.48",
+      "suite": {
+        "passed": 28,
+        "failed": 0,
+        "results": [
+          {
+            "name": "タイトル→遊び方→戻る→開始",
+            "pass": true
+          },
+          {
+            "name": "未来の数字はDOMに描画しない",
+            "pass": true
+          },
+          {
+            "name": "数字キーで配置・長押し反復を拒否",
+            "pass": true
+          },
+          {
+            "name": "遊び方で進行停止・Escapeで復帰",
+            "pass": true
+          },
+          {
+            "name": "S01/S08 遊び方を開いたまま再読込で城・順序・種類を保持",
+            "pass": true
+          },
+          {
+            "name": "S06 新規開始の取消は保存を保持",
+            "pass": true
+          },
+          {
+            "name": "不可列クリックは得点と現在の城を変えない",
+            "pass": true
+          },
+          {
+            "name": "表示 320×568：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 320×740：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 375×667：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 375×812：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 1280×720：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 740×320：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "城は下から上へ積まれる",
+            "pass": true
+          },
+          {
+            "name": "S03 勝ち戦復元・同じ戦の続行",
+            "pass": true
+          },
+          {
+            "name": "強制戦終了→第2戦へ",
+            "pass": true
+          },
+          {
+            "name": "第3戦終了→最終結果→タイトル→再プレイ",
+            "pass": true
+          },
+          {
+            "name": "4段仮加点と失効表示",
+            "pass": true
+          },
+          {
+            "name": "配置不能の勝ち戦：18城・41点・原因・再読込",
+            "pass": true
+          },
+          {
+            "name": "25城の勝ち戦には原因を表示しない",
+            "pass": true
+          },
+          {
+            "name": "最終評価と原因を再読込して保持",
+            "pass": true
+          },
+          {
+            "name": "旧保存データから安全に新規開始",
+            "pass": true
+          },
+          {
+            "name": "画像3種の読み込みと種類名",
+            "pass": true
+          },
+          {
+            "name": "ゲーム内アセット読込成功・外部通信なし",
+            "pass": true
+          },
+          {
+            "name": "S08 詳細の読込・閉じるは盤面不変",
+            "pass": true
+          },
+          {
+            "name": "連続勝ち戦ボタン・連打・再読込の演出なし",
+            "pass": true
+          },
+          {
+            "name": "結果Escape無効・詳細後も加点不変",
+            "pass": true
+          },
+          {
+            "name": "未処理JavaScriptエラーなし",
+            "pass": true
+          }
+        ],
+        "errors": []
+      },
+      "layouts": [
+        {
+          "name": "title",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        }
+      ],
+      "nativeSteps": 53,
+      "checks": [
+        "native mouse/keyboard/full game/replay",
+        "focus trap/restore",
+        "touch emulation/reduced motion",
+        "rotation/visible height",
+        "denied storage",
+        "missing images",
+        "file:// reload",
+        "HTTP repository prefix",
+        "no external requests",
+        "no console errors"
+      ],
+      "errors": []
+    },
+    {
+      "channel": "chrome",
+      "version": "153.0.8010.50",
+      "suite": {
+        "passed": 28,
+        "failed": 0,
+        "results": [
+          {
+            "name": "タイトル→遊び方→戻る→開始",
+            "pass": true
+          },
+          {
+            "name": "未来の数字はDOMに描画しない",
+            "pass": true
+          },
+          {
+            "name": "数字キーで配置・長押し反復を拒否",
+            "pass": true
+          },
+          {
+            "name": "遊び方で進行停止・Escapeで復帰",
+            "pass": true
+          },
+          {
+            "name": "S01/S08 遊び方を開いたまま再読込で城・順序・種類を保持",
+            "pass": true
+          },
+          {
+            "name": "S06 新規開始の取消は保存を保持",
+            "pass": true
+          },
+          {
+            "name": "不可列クリックは得点と現在の城を変えない",
+            "pass": true
+          },
+          {
+            "name": "表示 320×568：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 320×740：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 375×667：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 375×812：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 1280×720：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "表示 740×320：5列・横溢れなし",
+            "pass": true
+          },
+          {
+            "name": "城は下から上へ積まれる",
+            "pass": true
+          },
+          {
+            "name": "S03 勝ち戦復元・同じ戦の続行",
+            "pass": true
+          },
+          {
+            "name": "強制戦終了→第2戦へ",
+            "pass": true
+          },
+          {
+            "name": "第3戦終了→最終結果→タイトル→再プレイ",
+            "pass": true
+          },
+          {
+            "name": "4段仮加点と失効表示",
+            "pass": true
+          },
+          {
+            "name": "配置不能の勝ち戦：18城・41点・原因・再読込",
+            "pass": true
+          },
+          {
+            "name": "25城の勝ち戦には原因を表示しない",
+            "pass": true
+          },
+          {
+            "name": "最終評価と原因を再読込して保持",
+            "pass": true
+          },
+          {
+            "name": "旧保存データから安全に新規開始",
+            "pass": true
+          },
+          {
+            "name": "画像3種の読み込みと種類名",
+            "pass": true
+          },
+          {
+            "name": "ゲーム内アセット読込成功・外部通信なし",
+            "pass": true
+          },
+          {
+            "name": "S08 詳細の読込・閉じるは盤面不変",
+            "pass": true
+          },
+          {
+            "name": "連続勝ち戦ボタン・連打・再読込の演出なし",
+            "pass": true
+          },
+          {
+            "name": "結果Escape無効・詳細後も加点不変",
+            "pass": true
+          },
+          {
+            "name": "未処理JavaScriptエラーなし",
+            "pass": true
+          }
+        ],
+        "errors": []
+      },
+      "layouts": [
+        {
+          "name": "title",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 320,
+          "h": 568,
+          "sw": 320,
+          "sh": 568,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 320,
+          "h": 740,
+          "sw": 320,
+          "sh": 740,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 375,
+          "h": 667,
+          "sw": 375,
+          "sh": 667,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 375,
+          "h": 812,
+          "sw": 375,
+          "sh": 812,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 1280,
+          "h": 720,
+          "sw": 1280,
+          "sh": 720,
+          "bad": []
+        },
+        {
+          "name": "title",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "playing",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "bonus",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "win",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "fullwin",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "battle",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        },
+        {
+          "name": "final",
+          "w": 740,
+          "h": 320,
+          "sw": 740,
+          "sh": 320,
+          "bad": []
+        }
+      ],
+      "nativeSteps": 48,
+      "checks": [
+        "native mouse/keyboard/full game/replay",
+        "focus trap/restore",
+        "touch emulation/reduced motion",
+        "rotation/visible height",
+        "denied storage",
+        "missing images",
+        "file:// reload",
+        "HTTP repository prefix",
+        "no external requests",
+        "no console errors"
+      ],
+      "errors": []
+    }
+  ]
+}
